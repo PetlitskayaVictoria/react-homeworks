@@ -1,0 +1,20 @@
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.task {
+    width: 120px
+}
+
+.priority {
+    width: 120px
+}
+
+.itemContainer button {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+

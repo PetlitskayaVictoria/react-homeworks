@@ -1,0 +1,20 @@
+.tableStyle {
+    width: 400px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.buttonsStyle {
+    margin: 10px 0;
+}
+
+.buttonStyle {
+    height: 30px;
+    width: 70px;
+    margin-left: 5px;
+    background-color: hotpink;
+    cursor: pointer
+}
+
+

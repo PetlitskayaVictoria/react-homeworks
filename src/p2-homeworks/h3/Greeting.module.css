@@ -1,0 +1,47 @@
+.container {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputErrorContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+    height: 30px;
+    width: 300px;
+    margin-right: 15px;
+}
+
+.someClass {
+    border: 1px solid darkblue;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 5px;
+}
+
+.container button {
+    height: 35px;
+    width: 70px;
+    margin-right: 15px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:active {
+    background-color: #028c84;
+    color: white;
+}
+
+.usersNumber {
+    font-size: 30px;
+}
