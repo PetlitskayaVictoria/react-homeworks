@@ -18,13 +18,22 @@ function Navbar(props: NavbarType) {
         <div className={props.isCollapsed ? classes.hidden : classes.menuContainer}>
             <ul>
                 <li>
-                    <NavLink onClick={onClickItem} to="/pre-junior" className={classes.menuItem}>PreJunior</NavLink>
+                    <NavLink onClick={onClickItem}
+                             to="/pre-junior"
+                             className={classes.menuItem}
+                    activeClassName={classes.highlight}>PreJunior</NavLink>
                 </li>
                 <li>
-                    <NavLink onClick={onClickItem} to="/junior" className={classes.menuItem}>Junior</NavLink>
+                    <NavLink onClick={onClickItem}
+                             to="/junior"
+                             className={classes.menuItem}
+                             activeClassName={classes.highlight}>Junior</NavLink>
                 </li>
                 <li>
-                    <NavLink onClick={onClickItem} to="/junior-plus" className={classes.menuItem}>Junior Plus</NavLink>
+                    <NavLink onClick={onClickItem}
+                             to="/junior-plus"
+                             className={classes.menuItem}
+                             activeClassName={classes.highlight}>Junior Plus</NavLink>
                 </li>
             </ul>
         </div>
