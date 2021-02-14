@@ -10,8 +10,7 @@
 }
 
 .superInput {
-    border: 2px solid #319200;
-    box-shadow: 0 0 10px #116f00;
+    border: 1px solid black;
 }
 
 .errorInput {
