@@ -29,7 +29,14 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
-
+            <div>
+                <SuperRadio
+                    name={"radio1"}
+                    options={arr}
+                    value={value}
+                    onChangeOption={onChangeOption}
+                />
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
