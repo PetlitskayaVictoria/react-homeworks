@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import SuperSelect from "./common/c5-SuperSelect/SuperSelect";
 import SuperRadio from "./common/c6-SuperRadio/SuperRadio";
+import classes from './HW7.module.css'
 
 const arr = ["x", "y", "z"];
 
@@ -8,7 +9,7 @@ function HW7() {
     const [value, onChangeOption] = useState(arr[1]);
 
     return (
-        <div>
+        <div className={classes.hw7Container}>
             <hr/>
             homeworks 7
 

@@ -1,0 +1,12 @@
+.selectContainer {
+    margin: 20px 0 20px;
+    width: 150px;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    background-color: #5e5cdc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
