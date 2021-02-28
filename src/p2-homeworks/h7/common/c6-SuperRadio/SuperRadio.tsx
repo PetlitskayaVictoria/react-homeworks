@@ -39,6 +39,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     return (
         <div className={styles.radioButtonsContainer}>
             {mappedOptions}
+            <div>eee</div>
         </div>
     );
 }
