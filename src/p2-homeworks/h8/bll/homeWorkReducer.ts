@@ -1,11 +1,11 @@
-import {ActionType, StateType} from "../HW8";
+import {ActionType, personType, StateType} from "../HW8";
 
 export const homeWorkReducer = (state: StateType, action: ActionType): StateType => {
     switch (action.type) {
         case "sort": {
             let newState = [...state]
             if (action.payload === "up") {
-                newState = newState.sort(function (a: any, b: any): any {
+                newState = newState.sort(function (a: personType, b: personType) {
                     if (a.name > b.name) {
                         return 1;
                     }
@@ -15,7 +15,7 @@ export const homeWorkReducer = (state: StateType, action: ActionType): StateType
                     return 0;
                 })
             } else if (action.payload === "down") {
-                newState = newState.sort(function (a: any, b: any): any {
+                newState = newState.sort(function (a: personType, b: personType) {
                     if (a.name < b.name) {
                         return 1;
                     }

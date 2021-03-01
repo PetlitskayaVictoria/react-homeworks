@@ -3,7 +3,7 @@ import {homeWorkReducer} from "./bll/homeWorkReducer";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import styles from './HW8.module.css'
 
-type personType = {
+export type personType = {
     _id: number
     name: string
     age: number
