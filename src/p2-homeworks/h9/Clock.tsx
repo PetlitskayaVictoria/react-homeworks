@@ -27,7 +27,7 @@ function Clock() {
     };
 
     function toTwoSymbols(num: number | undefined) {
-        if (num) {
+        if (num !== undefined) {
             return num < 10 ? "0" + num : num
         }
     }
