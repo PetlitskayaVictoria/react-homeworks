@@ -4,7 +4,7 @@ import styles from './Clock.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0);
-    const [date, setDate] = useState<Date>();
+    const [date, setDate] = useState<Date>(new Date());
     const [show, setShow] = useState<boolean>(false);
 
     const stop = () => {
@@ -26,14 +26,12 @@ function Clock() {
         setShow(false)
     };
 
-    function toTwoSymbols(num: number | undefined) {
-        if (num !== undefined) {
+    function toTwoSymbols(num: number ) {
             return num < 10 ? "0" + num : num
-        }
     }
 
-    const stringTime = toTwoSymbols(date?.getHours()) + " : " + toTwoSymbols(date?.getMinutes()) + " : " + toTwoSymbols(date?.getSeconds());
-    const stringDate = toTwoSymbols(date?.getDay()) + "." + toTwoSymbols(date?.getMonth()) + "." + toTwoSymbols(date?.getFullYear());
+    const stringTime = toTwoSymbols(date.getHours()) + " : " + toTwoSymbols(date.getMinutes()) + " : " + toTwoSymbols(date.getSeconds());
+    const stringDate = toTwoSymbols(date.getDate()) + "." + toTwoSymbols(date.getMonth() + 1) + "." + toTwoSymbols(date.getFullYear());
 
     return (
         <div className={styles.clockContainer}>
