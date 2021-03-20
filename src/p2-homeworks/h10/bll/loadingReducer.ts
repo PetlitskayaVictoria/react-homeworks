@@ -1,14 +1,28 @@
-const initState = {
+import {ActionsTypes} from "./store";
 
+const TOGGLE_IS_LOADING = 'TOGGLE_IS_LOADING'
+
+type InitStateType = {
+    loading: boolean
+}
+
+const initState: InitStateType = {
+    loading : false
 };
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+export const loadingReducer = (state: InitStateType = initState, action: ActionsTypes): InitStateType => { // fix any
+    debugger
     switch (action.type) {
-        case "": {
-            return state;
+        case TOGGLE_IS_LOADING: {
+            return {...state, ...action.payload};
         }
-        default: return state;
+        default:
+            return state;
     }
 };
 
-export const loadingAC = (): any => {}; // fix any
+export type LoadingACType = ReturnType<typeof loadingAC>
+export const loadingAC = (loading: boolean): any => ({
+    type : TOGGLE_IS_LOADING,
+    payload: {loading}
+} as const); // fix any
