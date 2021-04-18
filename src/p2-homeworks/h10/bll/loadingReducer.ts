@@ -11,7 +11,6 @@ const initState: InitStateType = {
 };
 
 export const loadingReducer = (state: InitStateType = initState, action: ActionsTypes): InitStateType => { // fix any
-    debugger
     switch (action.type) {
         case TOGGLE_IS_LOADING: {
             return {...state, ...action.payload};

@@ -1,6 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import classes from './Navbar.module.css'
+import {PATH} from "./Routes";
 
 
 type NavbarType = {
@@ -19,19 +20,19 @@ function Navbar(props: NavbarType) {
             <ul>
                 <li>
                     <NavLink onClick={onClickItem}
-                             to="/pre-junior"
+                             to={PATH.PRE_JUNIOR}
                              className={classes.menuItem}
                     activeClassName={classes.highlight}>PreJunior</NavLink>
                 </li>
                 <li>
                     <NavLink onClick={onClickItem}
-                             to="/junior"
+                             to={PATH.JUNIOR}
                              className={classes.menuItem}
                              activeClassName={classes.highlight}>Junior</NavLink>
                 </li>
                 <li>
                     <NavLink onClick={onClickItem}
-                             to="/junior-plus"
+                             to={PATH.JUNIOR_PLUS}
                              className={classes.menuItem}
                              activeClassName={classes.highlight}>Junior Plus</NavLink>
                 </li>

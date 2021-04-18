@@ -1,0 +1,9 @@
+.sliderContainer {
+    width: 800px;
+    margin: 20px 50px;
+}
+
+.value2 {
+    display: inline-block;
+    margin: auto 50%;
+}
