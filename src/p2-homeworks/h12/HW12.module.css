@@ -1,3 +1,9 @@
+.container {
+   display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
 .dark {
     background: dimgrey;
 }
@@ -7,17 +13,26 @@
 }
 
 .red {
-    background: lightcoral;
+    background: #a92121;
 }
 
 .red-text {
-    color: aqua;
+    color: black;
 }
 
-.some {
-    background: lightgreen;
+.light {
+    background: #f3f1f9;
 }
 
-.some-text {
+.light-text {
     color: darkslateblue;
 }
+
+.purple {
+    background: #d3bcff;
+}
+
+.purple-text {
+    color: white;
+}
+
